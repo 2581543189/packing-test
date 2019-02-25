@@ -30,3 +30,12 @@ maven多个插件 如何一起执行
 spring boot 默认打包插件
 
 文件夹名称有点 和文件目录的关系，打包的时候怎么处理
+
+tar打包原理分析
+http://blog.chinaunix.net/uid-7358667-id-3542596.html
+
+linux 文件模型 文件的路径和解析方式不是文件内容的一部分
+
+jar包的格式 jar包中的jar包
+
+同时存在 jar包和class文件 jvm会如何处理
