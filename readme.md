@@ -39,3 +39,35 @@ linux 文件模型 文件的路径和解析方式不是文件内容的一部分
 jar包的格式 jar包中的jar包
 
 同时存在 jar包和class文件 jvm会如何处理
+
+maven内部运行原理解析
+https://www.cnblogs.com/ys-wuhan/p/6360914.html
+
+查看maven插件的源码
+http://maven.apache.org/plugins/index.html
+
+
+常用插件解析
+https://www.cnblogs.com/avivaye/p/5341341.html
+
+使用maven-help-plugin描述插件
+https://www.cnblogs.com/build-up/p/4975695.html
+
+maven的三大生命周期
+https://www.cnblogs.com/huxinga/p/6740897.html
+
+| parse | plugin | goal |
+| ------ | ------ | ------ |
+| clean | maven-clean-plugin | clean |
+| process-test-resources | maven-resources-plugin | testResources |
+| process-resources | maven-resources-plugin | resources |
+| package | maven-jar-plugin | jar |
+| compile | maven-compiler-plugin | compile |
+| test-compile | maven-compiler-plugin | test-compile |
+| test | maven-surefire-plugin | test |
+| install | maven-install-plugin | install |
+| deploy | maven-deploy-plugin | deploy |
+| site | maven-site-plugin | site |
+| site-deploy | maven-site-plugin | deploy |
+
+
